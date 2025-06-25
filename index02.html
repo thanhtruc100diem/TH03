@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: "menu content footer" "menu content footer";
+            grid-template-columns: 1fr 2fr 2fr;
+            gap: 5px;
+            background-color: #2196F3;
+            padding: 5px;
+        }
+        
+        .container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+        }
+        
+        .container>div.header {
+            grid-area: header;
+            text-align: center;
+        }
+        
+        .container>div.menu {
+            grid-area: menu;
+        }
+        
+        .container>div.content {
+            grid-area: content;
+        }
+        
+        .container>div.footer {
+            grid-area: footer;
+        }
+        
+        .content .text {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #e7bff7;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: 10px bolder;
+            font-weight: bolder;
+            color: red;
+        }
+        
+        .footer .text {
+            margin: 20px;
+            padding: 20px;
+            background-color: #e7bff7;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bolder;
+            color: red;
+        }
+        
+        .menu h1 {
+            margin: 30px;
+            padding: 30px;
+            text-align: center;
+            color: rgb(14, 14, 156);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="menu">
+            <h1>Cac mon hoc yeu thich cua toi</h1>
+        </div>
+        <div class="content">
+            <div class="text">Tai chinh doanh nghiep</div>
+            <div class="text">Co so du lieu</div>
+            <div class="text">Nguyen ly ke toan</div>
+        </div>
+        <div class="footer">
+            <div class="text">Thuc tap doanh nghiep</div>
+            <div class="text">Toan cao cap </div>
+            <div class="text">He thong va cong nghe Web</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
