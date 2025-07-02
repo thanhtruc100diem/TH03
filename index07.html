@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(221, 249, 249);
+        margin: 0px;
+
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        padding:10px;
+    }
+    .gallery img {
+        border-radius: 5px;
+        border: 3px solid black;
+        padding-bottom: 5px ;
+        height: 300px;
+        width: 400px;
+        transition: transform 0.3s ease;
+    }
+    h1 {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        color: red;
+        margin: 0px;
+    }
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+    @media (max-width:1024px) {
+        .gallery {
+            grid-template-columns: 1fr 1fr;
+        }
+
+    }
+    @media (max-width:600px) {
+        .gallery {
+            grid-template-columns: 1fr ;
+        }
+    }
+
+</style>
+<body>
+    <h1>Thu vien Anh</h1>
+    <div class="gallery">
+        <img src="https://vissaihotel.vn/photo/nui-non-nuoc-ninh-binh-0.jpg" alt="ANH 1">
+        <img src="https://nguhanhson.org/wp-content/uploads/2020/04/h2.jpg" alt="ANH 2">
+        <img src="https://mia.vn/media/uploads/blog-du-lich/nui-non-nuoc-kham-pha-ngon-nui-mang-tren-minh-nhieu-bai-tho-co-tai-ninh-binh-05-1641035079.jpg" alt="ANH 3">
+        <img src="https://vcdn1-dulich.vnecdn.net/2022/05/26/HM-2541-1532856147-3794-1653538679.jpg?w=0&h=0&q=100&dpr=1&fit=crop&s=nhRjg7V224ZofL6j6OWamQ" alt="ANH 4">
+        <img src="https://homepage.momocdn.net/blogscontents/momo-upload-api-220708155634-637928925940909799.jpg" alt="ANH 5">
+        <img src="https://phuotvivu.com/blog/wp-content/uploads/2021/08/Cao-bang.jpg" alt="ANH 6">
+    </div>
+</body>
+</html>
